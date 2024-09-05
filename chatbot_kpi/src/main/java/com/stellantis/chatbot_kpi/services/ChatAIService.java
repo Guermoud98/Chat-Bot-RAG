@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
 public class ChatAIService {
 
     private ChatClient chatClient; //c'est une interface independante du LLM utilisé
-
     public ChatAIService(ChatClient.Builder builder) {
         this.chatClient = builder.build();
     }

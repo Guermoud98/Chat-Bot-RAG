@@ -17,11 +17,13 @@ export default function Chat() {
         <div className="p-m">
             <h3>Chat Bot</h3>
             <div>
-                <TextField style={{width:'80%'}}
-                           onChange={(e=>setQuestion(e.target.value))}/>
+                <TextField style={{width:'80%'}} onChange={(e=>setQuestion(e.target.value))}/>
                 <Button theme="primary" onClick={send}>Send</Button>
                 <div>
-                    {response}
+                    <pre>
+                        {response}
+                    </pre>
+
                 </div>
             </div>
         </div>
